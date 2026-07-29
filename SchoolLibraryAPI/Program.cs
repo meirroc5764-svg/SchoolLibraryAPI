@@ -10,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddSingleton<IBooksRepository, BooksRepository>();
+builder.Services.AddSingleton<IStudensRepository, StudensRepository>();
 
 var app = builder.Build();
 

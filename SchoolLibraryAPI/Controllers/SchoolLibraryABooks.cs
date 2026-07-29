@@ -6,10 +6,10 @@ namespace SchoolLibraryAPI.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-public class SchoolLibraryAPI : ControllerBase
+public class SchoolLibraryAPIBooks : ControllerBase
 {
     private IBooksRepository _booksRepository;
-    public SchoolLibraryAPI (IBooksRepository booksRepository)
+    public SchoolLibraryAPIBooks (IBooksRepository booksRepository)
     {
         _booksRepository = booksRepository;
     }
